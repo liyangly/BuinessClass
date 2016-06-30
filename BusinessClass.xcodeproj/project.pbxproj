@@ -46,12 +46,8 @@
 		B69FB7971D237E34003040BF /* BasePageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7961D237E34003040BF /* BasePageTableView.m */; };
 		B69FB79C1D237E5E003040BF /* BasePage2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7991D237E5E003040BF /* BasePage2TableViewCell.m */; };
 		B69FB79D1D237E5E003040BF /* BasePageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB79B1D237E5E003040BF /* BasePageTableViewCell.m */; };
-		B69FB7A41D238077003040BF /* DashedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7A01D238077003040BF /* DashedTableViewCell.m */; };
-		B69FB7A51D238077003040BF /* MessageHintCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7A21D238077003040BF /* MessageHintCell.m */; };
-		B69FB7A61D238077003040BF /* MessageHintCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69FB7A31D238077003040BF /* MessageHintCell.xib */; };
 		B69FB7AC1D2387CB003040BF /* MyBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7AB1D2387CB003040BF /* MyBaseObject.m */; };
 		B69FB7B11D23AAA9003040BF /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7B01D23AAA9003040BF /* TabBarController.m */; };
-		B69FB7B41D23AEDB003040BF /* MyWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7B31D23AEDB003040BF /* MyWebView.m */; };
 		B69FB7B71D23B2FB003040BF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7B61D23B2FB003040BF /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -152,17 +148,10 @@
 		B69FB7991D237E5E003040BF /* BasePage2TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePage2TableViewCell.m; sourceTree = "<group>"; };
 		B69FB79A1D237E5E003040BF /* BasePageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePageTableViewCell.h; sourceTree = "<group>"; };
 		B69FB79B1D237E5E003040BF /* BasePageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePageTableViewCell.m; sourceTree = "<group>"; };
-		B69FB79F1D238077003040BF /* DashedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashedTableViewCell.h; sourceTree = "<group>"; };
-		B69FB7A01D238077003040BF /* DashedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashedTableViewCell.m; sourceTree = "<group>"; };
-		B69FB7A11D238077003040BF /* MessageHintCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHintCell.h; sourceTree = "<group>"; };
-		B69FB7A21D238077003040BF /* MessageHintCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageHintCell.m; sourceTree = "<group>"; };
-		B69FB7A31D238077003040BF /* MessageHintCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageHintCell.xib; sourceTree = "<group>"; };
 		B69FB7AA1D2387CB003040BF /* MyBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseObject.h; sourceTree = "<group>"; };
 		B69FB7AB1D2387CB003040BF /* MyBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseObject.m; sourceTree = "<group>"; };
 		B69FB7AF1D23AAA9003040BF /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		B69FB7B01D23AAA9003040BF /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
-		B69FB7B21D23AEDB003040BF /* MyWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebView.h; sourceTree = "<group>"; };
-		B69FB7B31D23AEDB003040BF /* MyWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebView.m; sourceTree = "<group>"; };
 		B69FB7B51D23B2FB003040BF /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		B69FB7B61D23B2FB003040BF /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		FF9F5FB71D95D114EB279C69 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +192,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B61661F21D25245F006C0E26 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		B61661F31D25247B006C0E26 /* SwipeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwipeView;
+			sourceTree = "<group>";
+		};
+		B61661F41D252491006C0E26 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		B61661F51D2524BF006C0E26 /* SpecTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SpecTableViewCell;
+			sourceTree = "<group>";
+		};
 		B69FB6EF1D235C71003040BF = {
 			isa = PBXGroup;
 			children = (
@@ -232,8 +249,8 @@
 				B69FB7731D23771D003040BF /* Applications */,
 				B69FB7311D235CD3003040BF /* Models */,
 				B69FB7301D235CBB003040BF /* Views */,
-				B69FB72F1D235C99003040BF /* Categories */,
 				B69FB72E1D235C8A003040BF /* Utils */,
+				B69FB72F1D235C99003040BF /* Categories */,
 				B69FB7B51D23B2FB003040BF /* FirstViewController.h */,
 				B69FB7B61D23B2FB003040BF /* FirstViewController.m */,
 				B69FB7041D235C71003040BF /* Main.storyboard */,
@@ -318,7 +335,10 @@
 		B69FB7301D235CBB003040BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B69FB79E1D238065003040BF /* factoryitems */,
+				B61661F51D2524BF006C0E26 /* SpecTableViewCell */,
+				B61661F41D252491006C0E26 /* WebView */,
+				B61661F31D25247B006C0E26 /* SwipeView */,
+				B61661F21D25245F006C0E26 /* SearchBar */,
 				B69FB7941D237E29003040BF /* Cell */,
 				B69FB7931D237E11003040BF /* TableView */,
 				B69FB7381D23701B003040BF /* CoreLock */,
@@ -478,20 +498,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		B69FB79E1D238065003040BF /* factoryitems */ = {
-			isa = PBXGroup;
-			children = (
-				B69FB7B21D23AEDB003040BF /* MyWebView.h */,
-				B69FB7B31D23AEDB003040BF /* MyWebView.m */,
-				B69FB79F1D238077003040BF /* DashedTableViewCell.h */,
-				B69FB7A01D238077003040BF /* DashedTableViewCell.m */,
-				B69FB7A11D238077003040BF /* MessageHintCell.h */,
-				B69FB7A21D238077003040BF /* MessageHintCell.m */,
-				B69FB7A31D238077003040BF /* MessageHintCell.xib */,
-			);
-			path = factoryitems;
-			sourceTree = "<group>";
-		};
 		B69FB7AD1D23AA8D003040BF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -625,7 +631,6 @@
 			files = (
 				B69FB70B1D235C71003040BF /* LaunchScreen.storyboard in Resources */,
 				B69FB7081D235C71003040BF /* Assets.xcassets in Resources */,
-				B69FB7A61D238077003040BF /* MessageHintCell.xib in Resources */,
 				B69FB75C1D23701B003040BF /* CLLockVC.xib in Resources */,
 				B69FB7061D235C71003040BF /* Main.storyboard in Resources */,
 			);
@@ -704,7 +709,6 @@
 				B69FB7721D2376BB003040BF /* WebServiceUtil.m in Sources */,
 				B69FB7641D23701B003040BF /* CLLockView.m in Sources */,
 				B69FB79D1D237E5E003040BF /* BasePageTableViewCell.m in Sources */,
-				B69FB7A41D238077003040BF /* DashedTableViewCell.m in Sources */,
 				B69FB7621D23701B003040BF /* CLLockLabel.m in Sources */,
 				B69FB7911D237D1E003040BF /* UITextView+canPerformAction.m in Sources */,
 				B69FB7B71D23B2FB003040BF /* FirstViewController.m in Sources */,
@@ -725,8 +729,6 @@
 				B69FB78D1D237D1E003040BF /* UIColor+Util.m in Sources */,
 				B69FB7901D237D1E003040BF /* UITextField+LimitLength.m in Sources */,
 				B69FB75E1D23701B003040BF /* CoreLockConst.m in Sources */,
-				B69FB7B41D23AEDB003040BF /* MyWebView.m in Sources */,
-				B69FB7A51D238077003040BF /* MessageHintCell.m in Sources */,
 				B69FB7891D237D1E003040BF /* NSString+getMyString.m in Sources */,
 				B69FB7001D235C71003040BF /* AppDelegate.m in Sources */,
 				B69FB7611D23701B003040BF /* CLLockItemView.m in Sources */,

@@ -13,6 +13,7 @@
 
 @interface AppDelegate () {
     UIAlertView *versionalert;
+    UIAlertView *mustupdateversionalert;
     NSString *_appurl;
 }
 
@@ -108,6 +109,7 @@
     //        return UIStatusBarStyleLightContent;
     //    }
     
+    //如果使用1，有时还需要下面这句，需研究
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     
 }
@@ -120,28 +122,35 @@
         _appurl = [dict valueForKeyPath:@"appUrl"];
         NSString *alertTitle = [dict valueForKeyPath:@"alertTitle"];
         NSString *alertInfo = [dict valueForKeyPath:@"alertInfo"];
+        NSString *appImportant = [dict valueForKeyPath:@"appImportant"];
         if (_appurl == nil) {
             return ;
         }
-        if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
-            
-            UIAlertController *alertctrl = [UIAlertController alertControllerWithTitle:alertTitle message:alertInfo preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"暂不升级" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                
-            }];
-            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"马上升级" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                NSURL *url = [NSURL URLWithString:_appurl];
-                [[UIApplication sharedApplication] openURL:url];
-            }];
-            [alertctrl addAction:cancelAction];
-            [alertctrl addAction:sureAction];
-            
-        }else {
-            
+        //UIAlertController只有在VC下才可以实现，此处还需找到替代方案
+//        if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+//            
+//            UIAlertController *alertctrl = [UIAlertController alertControllerWithTitle:alertTitle message:alertInfo preferredStyle:UIAlertControllerStyleAlert];
+//            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"暂不升级" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//                
+//            }];
+//            UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"马上升级" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//                NSURL *url = [NSURL URLWithString:_appurl];
+//                [[UIApplication sharedApplication] openURL:url];
+//            }];
+//            [alertctrl addAction:cancelAction];
+//            [alertctrl addAction:sureAction];
+//            
+//        }else {
+        if ([appImportant isEqualToString:@"0"]) {
             versionalert = [[UIAlertView alloc] initWithTitle:alertTitle message:alertInfo delegate:self cancelButtonTitle:@"暂不升级" otherButtonTitles:@"马上升级", nil];
             [versionalert show];
-            
+        }else {
+            mustupdateversionalert = [[UIAlertView alloc] initWithTitle:alertTitle message:alertInfo delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+            [mustupdateversionalert show];
         }
+        
+            
+//        }
         
     }];
     
@@ -149,7 +158,7 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
-    if (alertView == versionalert && buttonIndex == 1) {
+    if ( (alertView == versionalert && buttonIndex == 1) || alertView == mustupdateversionalert ) {
         NSURL *url = [NSURL URLWithString:_appurl];
         [[UIApplication sharedApplication] openURL:url];
     }
