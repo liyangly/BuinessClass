@@ -10,3 +10,4 @@ pod 'FMDB’, ‘~> 2.6.2’
 pod 'YYJSONHelper’, ‘~> 1.0.7’
 pod 'NJKWebViewProgress’, ‘~> 0.2.3’
 pod 'RDVTabBarController', '~> 1.1.9'
+pod 'BaiduMapKit'

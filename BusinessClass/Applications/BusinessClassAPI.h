@@ -17,6 +17,8 @@
 
 #define MyWSDL_prefix @""
 
+//百度地图 KEY
+#define BusinessClass_BaiduMapKey @"cG97Rocm9tAWmRFkICKuX3bB7kVdG9gt"
 
 //网络请求失败提示语
 static NSString *const My_HttpServicefailure = @"网络繁忙，请稍后再试!";

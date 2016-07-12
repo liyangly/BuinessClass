@@ -14,24 +14,28 @@
 
 #import "UIColor+Util.h"
 
+#import "FirstViewController.h"
+#import "OffLineMapViewController.h"
+#import "MapLocationViewController.h"
+#import "MyAliPayViewController.h"
+
 @implementation TabBarController
 
 + (RDVTabBarController *)getTabBarController {
     
-    UIViewController *VC1 = [[UIViewController alloc] init];
+    FirstViewController *VC1 = [[FirstViewController alloc] init];
     UINavigationController *firstNavigationController = [[UINavigationController alloc]
                                                          initWithRootViewController:VC1];
     
-    UIViewController *VC2 = [[UIViewController alloc] init];
+    OffLineMapViewController *VC2 = [[OffLineMapViewController alloc] init];
     UINavigationController *secondNavigationController = [[UINavigationController alloc]
                                                           initWithRootViewController:VC2];
     
-    UIViewController *VC3 = [[UIViewController alloc] init];
+    MapLocationViewController *VC3 = [[MapLocationViewController alloc] init];
     UINavigationController *thirdNavigationController = [[UINavigationController alloc]
                                                          initWithRootViewController:VC3];
     
-    
-    UIViewController *VC4 = [[UIViewController alloc] init];
+    MyAliPayViewController *VC4 = [[MyAliPayViewController alloc] init];
     UINavigationController *fourthNavigationController = [[UINavigationController alloc]
                                                          initWithRootViewController:VC4];
     
@@ -51,7 +55,7 @@
     //1.UIImage 对象尽量不要直接放到数组中，如果系统没有找到该图片，要么数组长度不对，要么Xcode直接崩溃
     //2.图片命名最好类似于 ic_%@_focus ic_%@_normal，并且放在Assets.xcassets中，分类整理好
     NSArray *tabBarItemImages = @[@"workStation",@"vesselTax",@"chargeRecord",@"set"];
-    NSArray *tabTitle = @[@"工作台",@"车船税",@"缴费记录",@"设置"];
+    NSArray *tabTitle = @[@"基本地图",@"离线地图",@"定位导航",@"多平台支付"];
     
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
@@ -61,14 +65,15 @@
                                               NSForegroundColorAttributeName:[UIColor blackColor]
                                               } ];
         item.title = [NSString stringWithFormat:@"%@",tabTitle[index]];
+        
         UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"ic_%@_focus",
                                                       [tabBarItemImages objectAtIndex:index]]];
         
         UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"ic_%@_normal",
                                                         [tabBarItemImages objectAtIndex:index]]];
         
-        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
-        [item  setSelectedTitleAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12],
+//        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        [item  setSelectedTitleAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],
                                             NSForegroundColorAttributeName:[UIColor colorWithHex:0x00A0EA]
                                             } ];
         index++;

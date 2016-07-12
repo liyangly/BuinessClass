@@ -9,12 +9,27 @@
 #import "AppDelegate.h"
 #import "UIImage+LV.h"
 #import "VersionUtil.h"
-#import "FirstViewController.h"
+#import "TabBarController.h"
+#import "BusinessClassAPI.h"
+//支付宝SDK
+#import <AlipaySDK/AlipaySDK.h>
+
+//百度地图
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
 
 @interface AppDelegate () {
     UIAlertView *versionalert;
     UIAlertView *mustupdateversionalert;
     NSString *_appurl;
+    
+    BMKMapManager *_mapManager;
 }
 
 @end
@@ -26,6 +41,9 @@
     // Override point for customization after application launch.
     
     [self customizeInterface];
+    
+    [self initBaiduMap];
+    
     [self initRootViewControllerForWindow];
     return YES;
 }
@@ -57,12 +75,48 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - 支付宝支付
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    
+    if ([url.host isEqualToString:@"safepay"]) {
+        //跳转支付宝钱包进行支付，处理支付结果
+        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+            NSLog(@"result = %@",resultDic);
+        }];
+    }
+    return YES;
+}
+
+// NOTE: 9.0以后使用新API接口
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
+{
+    if ([url.host isEqualToString:@"safepay"]) {
+        //跳转支付宝钱包进行支付，处理支付结果
+        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+            NSLog(@"result = %@",resultDic);
+        }];
+    }
+    return YES;
+}
+
+#pragma mark - 百度地图
+- (void)initBaiduMap {
+    _mapManager = [[BMKMapManager alloc]init];
+    BOOL ret = [_mapManager start:BusinessClass_BaiduMapKey  generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+}
+
 #pragma mark -- Private Method
 - (void)initRootViewControllerForWindow {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    UIViewController *rootVC = [[FirstViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    UIViewController *rootVC = [TabBarController getTabBarController];
+    self.window.rootViewController = rootVC;//[[UINavigationController alloc] initWithRootViewController:rootVC];
     [self.window makeKeyAndVisible];
 }
 
