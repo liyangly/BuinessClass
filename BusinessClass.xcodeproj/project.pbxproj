@@ -15,10 +15,11 @@
 		B61662031D252566006C0E26 /* BaseSwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B61662021D252566006C0E26 /* BaseSwipeView.m */; };
 		B61662081D25256E006C0E26 /* BtnMaskLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B61662051D25256E006C0E26 /* BtnMaskLayer.m */; };
 		B61662091D25256E006C0E26 /* MySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B61662071D25256E006C0E26 /* MySearchBar.m */; };
-		B68839E11D2F587E0008831A /* OffLineMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68839E01D2F587E0008831A /* OffLineMapViewController.m */; };
-		B68839E41D2F8AC10008831A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68839E31D2F8AC10008831A /* SecondViewController.m */; };
-		B68839E71D2F97780008831A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68839E61D2F97780008831A /* ThirdViewController.m */; };
-		B68839EC1D2F9C210008831A /* IndoorMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68839EB1D2F9C210008831A /* IndoorMapViewController.m */; };
+		B671DC081D348EEC00CA4EA9 /* OffLineMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B671DC071D348EEC00CA4EA9 /* OffLineMapViewController.m */; };
+		B671DC0F1D348EF300CA4EA9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B671DC0A1D348EF300CA4EA9 /* FirstViewController.m */; };
+		B671DC101D348EF300CA4EA9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B671DC0C1D348EF300CA4EA9 /* SecondViewController.m */; };
+		B671DC111D348EF300CA4EA9 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B671DC0E1D348EF300CA4EA9 /* ThirdViewController.m */; };
+		B671DC151D348EFB00CA4EA9 /* IndoorMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B671DC141D348EFB00CA4EA9 /* IndoorMapViewController.m */; };
 		B68839F11D2FA5330008831A /* MapLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68839F01D2FA5330008831A /* MapLocationViewController.m */; };
 		B69FB6FD1D235C71003040BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB6FC1D235C71003040BF /* main.m */; };
 		B69FB7001D235C71003040BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB6FF1D235C71003040BF /* AppDelegate.m */; };
@@ -60,7 +61,6 @@
 		B69FB79D1D237E5E003040BF /* BasePageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB79B1D237E5E003040BF /* BasePageTableViewCell.m */; };
 		B69FB7AC1D2387CB003040BF /* MyBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7AB1D2387CB003040BF /* MyBaseObject.m */; };
 		B69FB7B11D23AAA9003040BF /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7B01D23AAA9003040BF /* TabBarController.m */; };
-		B69FB7B71D23B2FB003040BF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FB7B61D23B2FB003040BF /* FirstViewController.m */; };
 		B6D3CD261D2CF23B000A7413 /* AliSDKDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D3CCC41D2CF23B000A7413 /* AliSDKDemo-Info.plist */; };
 		B6D3CD271D2CF23B000A7413 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D3CD131D2CF23B000A7413 /* Order.m */; };
 		B6D3CD281D2CF23B000A7413 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D3CD161D2CF23B000A7413 /* base64.m */; };
@@ -124,14 +124,16 @@
 		B61662051D25256E006C0E26 /* BtnMaskLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtnMaskLayer.m; sourceTree = "<group>"; };
 		B61662061D25256E006C0E26 /* MySearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySearchBar.h; sourceTree = "<group>"; };
 		B61662071D25256E006C0E26 /* MySearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySearchBar.m; sourceTree = "<group>"; };
-		B68839DF1D2F587E0008831A /* OffLineMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OffLineMapViewController.h; path = ../../OffLineMapViewController.h; sourceTree = "<group>"; };
-		B68839E01D2F587E0008831A /* OffLineMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OffLineMapViewController.m; path = ../../OffLineMapViewController.m; sourceTree = "<group>"; };
-		B68839E21D2F8AC10008831A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../../SecondViewController.h; sourceTree = "<group>"; };
-		B68839E31D2F8AC10008831A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../../SecondViewController.m; sourceTree = "<group>"; };
-		B68839E51D2F97780008831A /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThirdViewController.h; path = ../../ThirdViewController.h; sourceTree = "<group>"; };
-		B68839E61D2F97780008831A /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThirdViewController.m; path = ../../ThirdViewController.m; sourceTree = "<group>"; };
-		B68839EA1D2F9C210008831A /* IndoorMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndoorMapViewController.h; path = ../IndoorMap/IndoorMapViewController.h; sourceTree = "<group>"; };
-		B68839EB1D2F9C210008831A /* IndoorMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndoorMapViewController.m; path = ../IndoorMap/IndoorMapViewController.m; sourceTree = "<group>"; };
+		B671DC061D348EEC00CA4EA9 /* OffLineMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffLineMapViewController.h; sourceTree = "<group>"; };
+		B671DC071D348EEC00CA4EA9 /* OffLineMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffLineMapViewController.m; sourceTree = "<group>"; };
+		B671DC091D348EF300CA4EA9 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B671DC0A1D348EF300CA4EA9 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B671DC0B1D348EF300CA4EA9 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B671DC0C1D348EF300CA4EA9 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B671DC0D1D348EF300CA4EA9 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		B671DC0E1D348EF300CA4EA9 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B671DC131D348EFB00CA4EA9 /* IndoorMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndoorMapViewController.h; sourceTree = "<group>"; };
+		B671DC141D348EFB00CA4EA9 /* IndoorMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndoorMapViewController.m; sourceTree = "<group>"; };
 		B68839EF1D2FA5330008831A /* MapLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationViewController.h; sourceTree = "<group>"; };
 		B68839F01D2FA5330008831A /* MapLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationViewController.m; sourceTree = "<group>"; };
 		B69FB6F81D235C71003040BF /* BusinessClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,8 +217,6 @@
 		B69FB7AB1D2387CB003040BF /* MyBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseObject.m; sourceTree = "<group>"; };
 		B69FB7AF1D23AAA9003040BF /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		B69FB7B01D23AAA9003040BF /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
-		B69FB7B51D23B2FB003040BF /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../../FirstViewController.h; sourceTree = "<group>"; };
-		B69FB7B61D23B2FB003040BF /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../../FirstViewController.m; sourceTree = "<group>"; };
 		B6D3CCC41D2CF23B000A7413 /* AliSDKDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AliSDKDemo-Info.plist"; sourceTree = "<group>"; };
 		B6D3CCC71D2CF23B000A7413 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
 		B6D3CCC81D2CF23B000A7413 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
@@ -426,17 +426,24 @@
 			path = SpecTableViewCell;
 			sourceTree = "<group>";
 		};
+		B671DC121D348EFB00CA4EA9 /* IndoorMap */ = {
+			isa = PBXGroup;
+			children = (
+				B671DC131D348EFB00CA4EA9 /* IndoorMapViewController.h */,
+				B671DC141D348EFB00CA4EA9 /* IndoorMapViewController.m */,
+			);
+			path = IndoorMap;
+			sourceTree = "<group>";
+		};
 		B68839E81D2F9BB90008831A /* BacicMap */ = {
 			isa = PBXGroup;
 			children = (
-				B69FB7B51D23B2FB003040BF /* FirstViewController.h */,
-				B69FB7B61D23B2FB003040BF /* FirstViewController.m */,
-				B68839E21D2F8AC10008831A /* SecondViewController.h */,
-				B68839E31D2F8AC10008831A /* SecondViewController.m */,
-				B68839E51D2F97780008831A /* ThirdViewController.h */,
-				B68839E61D2F97780008831A /* ThirdViewController.m */,
-				B68839EA1D2F9C210008831A /* IndoorMapViewController.h */,
-				B68839EB1D2F9C210008831A /* IndoorMapViewController.m */,
+				B671DC091D348EF300CA4EA9 /* FirstViewController.h */,
+				B671DC0A1D348EF300CA4EA9 /* FirstViewController.m */,
+				B671DC0B1D348EF300CA4EA9 /* SecondViewController.h */,
+				B671DC0C1D348EF300CA4EA9 /* SecondViewController.m */,
+				B671DC0D1D348EF300CA4EA9 /* ThirdViewController.h */,
+				B671DC0E1D348EF300CA4EA9 /* ThirdViewController.m */,
 			);
 			path = BacicMap;
 			sourceTree = "<group>";
@@ -444,8 +451,8 @@
 		B68839ED1D2F9F030008831A /* OffLineMap */ = {
 			isa = PBXGroup;
 			children = (
-				B68839DF1D2F587E0008831A /* OffLineMapViewController.h */,
-				B68839E01D2F587E0008831A /* OffLineMapViewController.m */,
+				B671DC061D348EEC00CA4EA9 /* OffLineMapViewController.h */,
+				B671DC071D348EEC00CA4EA9 /* OffLineMapViewController.m */,
 			);
 			path = OffLineMap;
 			sourceTree = "<group>";
@@ -740,6 +747,7 @@
 		B69FB7AD1D23AA8D003040BF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B671DC121D348EFB00CA4EA9 /* IndoorMap */,
 				B68839EE1D2FA5200008831A /* MapLocal */,
 				B68839ED1D2F9F030008831A /* OffLineMap */,
 				B68839E81D2F9BB90008831A /* BacicMap */,
@@ -1106,10 +1114,8 @@
 				B6D3CD621D2D0B4B000A7413 /* MyAliPayWebTypeViewController.m in Sources */,
 				B6D3CD5F1D2D0538000A7413 /* AliPayProduct.m in Sources */,
 				B69FB79D1D237E5E003040BF /* BasePageTableViewCell.m in Sources */,
-				B68839EC1D2F9C210008831A /* IndoorMapViewController.m in Sources */,
 				B69FB7621D23701B003040BF /* CLLockLabel.m in Sources */,
 				B69FB7911D237D1E003040BF /* UITextView+canPerformAction.m in Sources */,
-				B69FB7B71D23B2FB003040BF /* FirstViewController.m in Sources */,
 				B69FB75D1D23701B003040BF /* CALayer+Anim.m in Sources */,
 				B69FB78B1D237D1E003040BF /* NSString+myContains.m in Sources */,
 				B6D3CD5C1D2CFF43000A7413 /* MyAliPayViewController.m in Sources */,
@@ -1120,19 +1126,20 @@
 				B69FB7341D23661A003040BF /* FMDBUtil.m in Sources */,
 				B69FB7691D2371D7003040BF /* UserDataModel.m in Sources */,
 				B69FB7921D237D1E003040BF /* UITextView+Height.m in Sources */,
+				B671DC0F1D348EF300CA4EA9 /* FirstViewController.m in Sources */,
 				B69FB7601D23701B003040BF /* CLLockInfoView.m in Sources */,
+				B671DC151D348EFB00CA4EA9 /* IndoorMapViewController.m in Sources */,
 				B6D3CD2F1D2CF23B000A7413 /* RSADataVerifier.m in Sources */,
 				B6D3CD271D2CF23B000A7413 /* Order.m in Sources */,
 				B69FB7971D237E34003040BF /* BasePageTableView.m in Sources */,
 				B69FB7B11D23AAA9003040BF /* TabBarController.m in Sources */,
 				B69FB78A1D237D1E003040BF /* NSString+Height.m in Sources */,
+				B671DC111D348EF300CA4EA9 /* ThirdViewController.m in Sources */,
 				B69FB75F1D23701B003040BF /* CLLockNavVC.m in Sources */,
 				B69FB7651D23701B003040BF /* NSString+File.m in Sources */,
-				B68839E41D2F8AC10008831A /* SecondViewController.m in Sources */,
 				B69FB78D1D237D1E003040BF /* UIColor+Util.m in Sources */,
 				B6D3CD281D2CF23B000A7413 /* base64.m in Sources */,
 				B69FB7901D237D1E003040BF /* UITextField+LimitLength.m in Sources */,
-				B68839E71D2F97780008831A /* ThirdViewController.m in Sources */,
 				B61662001D25255E006C0E26 /* MyWebView.m in Sources */,
 				B69FB75E1D23701B003040BF /* CoreLockConst.m in Sources */,
 				B61662031D252566006C0E26 /* BaseSwipeView.m in Sources */,
@@ -1147,10 +1154,11 @@
 				B6D3CD2E1D2CF23B000A7413 /* RSADataSigner.m in Sources */,
 				B69FB6FD1D235C71003040BF /* main.m in Sources */,
 				B6D3CD291D2CF23B000A7413 /* DataSigner.m in Sources */,
-				B68839E11D2F587E0008831A /* OffLineMapViewController.m in Sources */,
+				B671DC081D348EEC00CA4EA9 /* OffLineMapViewController.m in Sources */,
 				B61662091D25256E006C0E26 /* MySearchBar.m in Sources */,
 				B69FB78E1D237D1E003040BF /* UIImage+LV.m in Sources */,
 				B69FB76F1D237632003040BF /* ViewLayerUtil.m in Sources */,
+				B671DC101D348EF300CA4EA9 /* SecondViewController.m in Sources */,
 				B69FB7631D23701B003040BF /* CLLockMainView.m in Sources */,
 				B61662081D25256E006C0E26 /* BtnMaskLayer.m in Sources */,
 				B69FB78F1D237D1E003040BF /* UITextField+KeyBoardHeader.m in Sources */,
